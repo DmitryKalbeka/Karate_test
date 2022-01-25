@@ -48,12 +48,6 @@ Feature: Gmail UI test
         Then assert text(emailSubject(1)) == subject
         When click(emailSubject(1))
         Then waitFor(emailVidget)
-        * print text(enteredRecipients)
-        * print reciepient
-        * print text(emailVidgetTitle)
-        * print text(emailContetntTextArea)
-        * print emailText
-    
         * assert text(enteredRecipients) == reciepient
         * assert text(emailVidgetTitle) == subject
         * assert text(emailContetntTextArea) == emailText
